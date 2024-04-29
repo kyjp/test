@@ -4,11 +4,14 @@ const Contact = () => {
   return (
     <div>
         <h1>お問い合わせフォーム</h1>
+        <span title="close">X</span>
         <p>すべてのフィールドは必須項目です。</p>
+        <img src="https://sample_img.png" alt="sample alt" />
+        <div data-testid="custom-element">custom htmml</div>
         <form action="">
             <div>
                 <label htmlFor="name">お名前</label>
-                <input type="text" name="" id="name" />
+                <input type="text" name="" id="name" placeholder='フルネーム' value="ShinCode" onChange={() => {}}/>
             </div>
             <div>
                 <label htmlFor="email">メールアドレス</label>
@@ -29,7 +32,7 @@ const Contact = () => {
                     利用規約に同意します
                 </label>
             </div>
-            <button>送信</button>
+            <button role='submit'>送信</button>
         </form>
     </div>
   )
